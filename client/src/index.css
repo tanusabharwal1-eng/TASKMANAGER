@@ -1,0 +1,603 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..72,400;6..72,600;6..72,700;6..72,800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* =========================================
+   GLOBAL
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background: #f5f6f8;
+}
+
+
+/* =========================================
+   LOGIN PAGE
+========================================= */
+
+.login-page {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 70px;
+
+  background: #f5f6f8;
+}
+
+
+/* =========================================
+   LEFT SIDE
+========================================= */
+
+.login-left {
+  width: 55%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 30px;
+}
+
+
+/* =========================================
+   TAGLINE
+========================================= */
+
+.tagline {
+  display: inline-block;
+
+  padding: 7px 15px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.5);
+
+  color: #6b7280;
+
+  font-size: 12px;
+
+  margin-bottom: 20px;
+}
+
+
+/* =========================================
+   MAIN HEADING
+========================================= */
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 2px;
+
+  text-align: center;
+
+  font-size: clamp(42px, 5vw, 70px);
+
+  line-height: 1.05;
+
+  font-weight: 800;
+
+  color: #2455d6;
+}
+
+
+/* =========================================
+   CIRCLE
+========================================= */
+
+.circle {
+  width: 100px;
+  height: 100px;
+
+  margin-top: 35px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #cb25a0,
+    #673eea,
+    #2455d6
+  );
+
+  box-shadow:
+    8px -20px 50px rgba(40, 37, 203, 0.35),
+    0 15px 30px rgba(203, 37, 156, 0.25);
+
+  /*
+    Start from below
+    and smoothly come upward
+  */
+  animation: circle-up 2s cubic-bezier(0.22, 1, 0.36, 1) forwards infinite;
+}
+
+
+/* =========================================
+   CIRCLE BOTTOM → TOP ANIMATION
+========================================= */
+
+@keyframes circle-up {
+
+  0% {
+    transform: translateY(180px);
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  55% {
+    opacity: 0.7;
+  }
+
+  80% {
+    transform: translateY(-8px);
+    opacity: 1;
+  }
+
+  90% {
+    transform: translateY(3px);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* =========================================
+   RIGHT SIDE
+========================================= */
+
+.login-right {
+  width: 45%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+}
+
+
+/* =========================================
+   LOGIN CARD
+========================================= */
+
+.login-card {
+  width: 100%;
+  max-width: 390px;
+
+  padding: 35px 32px;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 10px;
+
+  box-shadow:
+    rgba(0, 0, 0, 0.18) 0px 5px 18px;
+}
+
+
+/* =========================================
+   WELCOME TITLE
+========================================= */
+
+.welcome-title {
+  text-align: center;
+
+  color: #2455d6;
+
+  font-size: 28px;
+
+  font-weight: 800;
+
+  margin-bottom: 3px;
+}
+
+
+/* =========================================
+   WELCOME TEXT
+========================================= */
+
+.welcome-text {
+  text-align: center;
+
+  color: #777777;
+
+  font-size: 11px;
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================================
+   LOGIN FORM
+========================================= */
+
+.login-form {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 17px;
+}
+
+
+/* =========================================
+   TEXTBOX
+========================================= */
+
+.textbox-container {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.textbox-label {
+  color: #555555;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+.textbox-input {
+  width: 100%;
+
+  height: 42px;
+
+  padding: 0 15px;
+
+  background: #ffffff;
+
+  border: 1px solid #d5d9e0;
+
+  border-radius: 25px;
+
+  outline: none;
+
+  color: #333333;
+
+  font-size: 12px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.textbox-input::placeholder {
+  color: #a7adb7;
+}
+
+
+.textbox-input:focus {
+  border-color: #2455d6;
+
+  box-shadow:
+    0 0 0 2px rgba(36, 85, 214, 0.12);
+}
+
+
+/* =========================================
+   ERROR MESSAGE
+========================================= */
+
+.error-message {
+  margin-left: 8px;
+
+  color: #ef4444;
+
+  font-size: 10px;
+}
+
+
+/* =========================================
+   FORGOT PASSWORD
+========================================= */
+
+.forgot-password {
+  color: #555555;
+
+  font-size: 11px;
+
+  cursor: pointer;
+
+  margin-top: -2px;
+
+  transition: color 0.2s ease;
+}
+
+
+.forgot-password:hover {
+  color: #2455d6;
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-button {
+  width: 100%;
+
+  height: 40px;
+
+  border: none;
+
+  border-radius: 25px;
+
+  background: #2455d6;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.login-button:hover {
+  background: #1745c0;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 5px 12px rgba(36, 85, 214, 0.2);
+}
+
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================
+   FORM CONTAINER
+========================================= */
+
+.form-container {
+  box-shadow:
+    rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  border-radius: 10px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #807c7c;
+
+  border-radius: 6px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+/* =========================================
+   DOTS
+========================================= */
+
+.dots-container {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  width: 100%;
+
+  height: 100%;
+
+  margin-bottom: 5px;
+}
+
+
+.dot {
+  width: 12px;
+
+  height: 12px;
+
+  margin-right: 10px;
+
+  border-radius: 50%;
+
+  background-color: hsl(0, 0%, 100%);
+
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+
+.dot:last-child {
+  margin-right: 0;
+}
+
+
+.dot:nth-child(1) {
+  animation-delay: -0.3s;
+}
+
+
+.dot:nth-child(2) {
+  animation-delay: -0.1s;
+}
+
+
+.dot:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+
+/* =========================================
+   DOT PULSE
+========================================= */
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(0.8);
+
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(1.2);
+
+    opacity: 1;
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .login-page {
+    flex-direction: column;
+
+    padding: 30px 20px;
+
+    gap: 20px;
+  }
+
+
+  .login-left {
+    width: 100%;
+
+    padding: 20px;
+  }
+
+
+  .login-right {
+    width: 100%;
+
+    padding: 20px;
+  }
+
+
+  .main-title {
+    font-size: 48px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+  .login-page {
+    padding: 20px 15px;
+  }
+
+
+  .tagline {
+    font-size: 10px;
+  }
+
+
+  .main-title {
+    font-size: 38px;
+  }
+
+
+  .circle {
+    width: 80px;
+
+    height: 80px;
+
+    margin-top: 25px;
+  }
+
+
+  .login-card {
+    padding: 28px 22px;
+  }
+
+
+  .welcome-title {
+    font-size: 24px;
+  }
+}
+.dashboard-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #f8f9fa;
+  padding: 10px;
+}
+
+.dashboard-page h2 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+}
