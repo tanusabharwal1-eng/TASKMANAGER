@@ -2,30 +2,14 @@
 
 TaskMe is a task management web application built to help users create, organize, track, and manage their tasks through a clean and simple interface.
 
-The project was developed as a hands-on project to strengthen frontend development, React, state management, routing, and Git/GitHub skills.
+This project was developed as a hands-on project to strengthen my understanding of frontend development, React, routing, state management, and Git/GitHub.
 
 ---
 
-##  Features
-
--User Login
--Dashboard
--Create and manage tasks
--Search tasks
--Filter tasks by status
--Completed tasks
--In Progress tasks
--To Do tasks
--Team/User management
--Trash management
--Notifications
--User profile menu
--Responsive interface
--Task data persistence using Local Storage
 ## 🚀 Features
 
 - 🔐 User Login
-- 📊 Dashboard
+- 📊 Dashboard with task statistics
 - ➕ Create and manage tasks
 - 🔎 Search tasks
 - 📌 Filter tasks by status
@@ -41,7 +25,7 @@ The project was developed as a hands-on project to strengthen frontend developme
 
 ---
 
-##  Tech Stack
+## 🛠️ Tech Stack
 
 ### Frontend
 
@@ -67,6 +51,7 @@ The project was developed as a hands-on project to strengthen frontend developme
 - npm
 
 ---
+
 ## 📸 Project Screenshots
 
 ### 🔐 Login Page
@@ -98,16 +83,17 @@ The project was developed as a hands-on project to strengthen frontend developme
 <p align="center">
   <img src="screenshots/todo.png" width="85%" alt="TaskMe To Do">
 </p>
+
+---
+
 ## 📂 Project Structure
 
 ```text
 TASKMANAGER/
 │
 ├── client/
-│   │
 │   ├── src/
 │   │   ├── assets/
-│   │   │
 │   │   ├── components/
 │   │   │   ├── Navbar.jsx
 │   │   │   ├── Sidebar.jsx
@@ -130,5 +116,11 @@ TASKMANAGER/
 │   ├── package.json
 │   └── ...
 │
-└── README.md
+├── screenshots/
+│   ├── login.png
+│   ├── dashboard.png
+│   ├── tasks.png
+│   ├── addtask.png
+│   └── todo.png
+│
 └── README.md
