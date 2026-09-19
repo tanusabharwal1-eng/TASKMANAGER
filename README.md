@@ -22,6 +22,22 @@ The project was developed as a hands-on project to strengthen frontend developme
 -User profile menu
 -Responsive interface
 -Task data persistence using Local Storage
+## 🚀 Features
+
+- 🔐 User Login
+- 📊 Dashboard
+- ➕ Create and manage tasks
+- 🔎 Search tasks
+- 📌 Filter tasks by status
+- ✅ Completed tasks
+- 🔄 In Progress tasks
+- 📝 To Do tasks
+- 👥 Team/User management
+- 🗑️ Trash management
+- 🔔 Notifications
+- 👤 User profile menu
+- 📱 Responsive interface
+- 💾 Task data persistence using Local Storage
 
 ---
 
@@ -51,28 +67,37 @@ The project was developed as a hands-on project to strengthen frontend developme
 - npm
 
 ---
-## Screenshots
+## 📸 Project Screenshots
 
-###  Login Page
+### 🔐 Login Page
 
-![TaskMe Login](screenshots/login.png)
+<p align="center">
+  <img src="screenshots/login.png" width="85%" alt="TaskMe Login Page">
+</p>
 
-###  Dashboard
+### 📊 Dashboard
 
-![TaskMe Dashboard](screenshots/dashboard.png)
+<p align="center">
+  <img src="screenshots/dashboard.png" width="85%" alt="TaskMe Dashboard">
+</p>
 
-###  Task Management
+### 📝 Task Management
 
-![TaskMe Tasks](screenshots/tasks.png)
+<p align="center">
+  <img src="screenshots/tasks.png" width="85%" alt="TaskMe Task Management">
+</p>
 
-###  Team Management
+### ➕ Add Task
 
-![TaskMe Team](screenshots/team.png)
+<p align="center">
+  <img src="screenshots/addtask.png" width="85%" alt="TaskMe Add Task">
+</p>
 
-###  Trash
+### 📝 To Do
 
-![TaskMe Trash](screenshots/trash.png)
-
+<p align="center">
+  <img src="screenshots/todo.png" width="85%" alt="TaskMe To Do">
+</p>
 ## 📂 Project Structure
 
 ```text
@@ -105,4 +130,5 @@ TASKMANAGER/
 │   ├── package.json
 │   └── ...
 │
+└── README.md
 └── README.md
