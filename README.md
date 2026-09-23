@@ -6,27 +6,26 @@ This project was developed as a hands-on project to strengthen my understanding 
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🔐 User Login
-- 📊 Dashboard with task statistics
-- ➕ Create and manage tasks
-- 🔎 Search tasks
-- 📌 Filter tasks by status
-- ✅ Completed tasks
-- 🔄 In Progress tasks
-- 📝 To Do tasks
-- 👥 Team/User management
-- 🗑️ Trash management
-- 🔔 Notifications
-- 👤 User profile menu
-- 📱 Responsive interface
-- 💾 Task data persistence using Local Storage
+-  User Login
+-  Dashboard with task statistics
+-  Create and manage tasks
+-  Search tasks
+-  Filter tasks by status
+-  Completed tasks
+-  In Progress tasks
+-  To Do tasks
+-  Team/User management
+-  Trash management
+-  Notifications
+-  User profile menu
+-  Responsive interface
+-  Task data persistence using Local Storage
 
 ---
 
-## 🛠️ Tech Stack
-
+##  Tech Stack
 ### Frontend
 
 - React.js
@@ -52,7 +51,7 @@ This project was developed as a hands-on project to strengthen my understanding 
 
 ---
 
-## 📸 Project Screenshots
+##  Project Screenshots
 
 ### 🔐 Login Page
 
@@ -72,7 +71,7 @@ This project was developed as a hands-on project to strengthen my understanding 
   <img src="screenshots/tasks.png" width="85%" alt="TaskMe Task Management">
 </p>
 
-### ➕ Add Task
+###  Add Task
 
 <p align="center">
   <img src="screenshots/addtask.png" width="85%" alt="TaskMe Add Task">
